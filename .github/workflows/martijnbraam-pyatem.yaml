@@ -1,4 +1,4 @@
-name: "Repository Mirror: GitHub"
+name: "Repository Mirror - martijnbraam pyatem"
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     name: "Mirror"
     steps:
-      - uses: pkgstore/github-action-mirror@main
+      - uses: pkgstore/github-action-mirror@1.0.10
         with:
           source_repo: "https://git.sr.ht/~martijnbraam/pyatem"
           source_user: "USER"
